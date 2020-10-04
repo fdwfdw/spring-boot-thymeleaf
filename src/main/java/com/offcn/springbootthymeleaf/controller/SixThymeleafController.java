@@ -1,5 +1,6 @@
 package com.offcn.springbootthymeleaf.controller;
 
+import org.springframework.http.converter.json.GsonBuilderUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +15,9 @@ public class SixThymeleafController {
      */
     @GetMapping("/six")
     public String indexPage(Model model) {
+        System.out.println("分支");
         return "index6";
     }
+
 }
 
